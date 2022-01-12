@@ -1,0 +1,46 @@
+<link rel="stylesheet" href="./node_modules/figma-plugin-ds/dist/figma-plugin-ds.css">
+<script src="https://cdn.jsdelivr.net/gh/thomas-lowry/figma-plugin-ds/dist/iife/figma-plugin-ds.js"></script>
+<link rel="stylesheet" href="../../node_modules/figma-plugin-ds/dist/figma-plugin-ds.css">
+
+<h2>Pattern Creator</h2>
+
+<p>Height: <input class="input__field" id="height" value="3" placeholder="Placeholder"></p>
+<p>Width: <input class="input__field" id="width" value="3" placeholder="Placeholder"></p>
+<p>Section Name: <input id="sectionName" value="Section" placeholder="Placeholder"></p>
+<p>Random Rotation: <input id="checkbox1" class="checkbox__box" type="checkbox" checked></p>
+
+<button class='button button--primary' id="create">Create</button>
+<button class='button button--secondary' id="cancel">Close</button>
+
+<script>
+    document.getElementById('create').onclick = () => {
+
+        const textbox1 = document.getElementById('height');
+        const textbox2 = document.getElementById('width');
+        const sectionName = document.getElementById('sectionName').value;
+
+        const height = parseInt(textbox1.value, 10);
+        const width = parseInt(textbox2.value, 10);
+        const randRotation = document.getElementById('checkbox1').checked;
+
+
+        parent.postMessage({
+            pluginMessage: {
+                type: 'create-pattern',
+                height,
+                width,
+                randRotation,
+                sectionName
+            }
+        }, '*')
+
+    }
+
+    document.getElementById('cancel').onclick = () => {
+        parent.postMessage({
+            pluginMessage: {
+                type: 'cancel'
+            }
+        }, '*')
+    }
+</script>
