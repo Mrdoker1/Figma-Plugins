@@ -1,17 +1,17 @@
 {
-  "name": "Test-1",
-  "version": "1.0.0",
-  "description": "Your Figma plugin",
-  "main": "code.js",
-  "scripts": {
-    "build": "tsc -p tsconfig.json"
-  },
-  "author": "",
-  "license": "",
-  "devDependencies": {
-    "@figma/plugin-typings": "^1.40.0"
-  },
-  "dependencies": {
-    "figma-plugin-ds": "^1.0.1"
-  }
+    "name": "Pattern Creator",
+    "version": "1.0.0",
+    "description": "Helps to create patterns from selected frames",
+    "main": "code.js",
+    "scripts": {
+        "build": "tsc -p tsconfig.json"
+    },
+    "author": "",
+    "license": "",
+    "devDependencies": {
+        "@figma/plugin-typings": "^1.40.0"
+    },
+    "dependencies": {
+        "figma-plugin-ds": "^1.0.1"
+    }
 }
