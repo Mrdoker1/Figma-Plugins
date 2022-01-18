@@ -68,4 +68,7 @@ figma.ui.onmessage = msg => {
         }
     }
 
+    if (msg.type === 'cancel') {
+        figma.closePlugin();
+    }
 };

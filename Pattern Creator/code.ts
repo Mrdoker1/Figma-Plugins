@@ -62,6 +62,10 @@ figma.ui.onmessage = msg => {
         } else {
             figma.notify('You need to select at least 2 frames!');
         }
+        
+        if (msg.type === 'cancel') {
+            figma.closePlugin();
+        }
     }
 
 };
