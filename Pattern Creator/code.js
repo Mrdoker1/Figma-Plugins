@@ -1,7 +1,7 @@
 // figma.showUI(__html__);
 
 figma.showUI(
-    __html__, { width: 360, height: 230, title: "Pattern Creator", position: { x: 100, y: 100 } }
+    __html__, { width: 380, height: 230, title: "Pattern Creator", position: { x: 100, y: 100 } }
 )
 
 function getRandom(min, max) {

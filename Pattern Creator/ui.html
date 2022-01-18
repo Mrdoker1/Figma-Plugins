@@ -1403,7 +1403,6 @@
         align-items: center;
         width: 100%;
         height: 30px;
-        margin: 1px 0 1px 0;
         padding: var(--size-xxsmall) var(--size-xxxsmall) var(--size-xxsmall) var(--size-xxsmall);
         color: var(--black8);
         border: 1px solid transparent;
@@ -2062,7 +2061,7 @@
     
     .left {
         float: left;
-        margin-right: 16px;
+        margin-right: 12px;
     }
     
     .right {
@@ -2088,7 +2087,7 @@
 
 
         <div class="table-row">
-            <div class="section-title">Pattern Piece Label</div>
+            <div class="section-title">Element Label</div>
             <div class="input button-group left">
                 <input type="input" class="input__field" value="Section" id="sectionName" placeholder="Section Name">
             </div>
@@ -2117,7 +2116,6 @@
         const height = parseInt(textbox1.value, 10);
         const width = parseInt(textbox2.value, 10);
         const randRotation = document.getElementById('checkbox1').checked;
-
 
         parent.postMessage({
             pluginMessage: {
