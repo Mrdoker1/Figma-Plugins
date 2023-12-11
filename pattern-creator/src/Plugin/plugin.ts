@@ -1,6 +1,6 @@
-export default function start() {
-    figma.showUI(__html__);
-}
+export {};
+
+figma.showUI(__html__);
 
 function getRandom(min: number, max: number) {
     min = Math.ceil(min);

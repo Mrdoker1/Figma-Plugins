@@ -22,7 +22,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "postbuild": "node update-manifest.js"
+    "postbuild": "tsc src/plugin/plugin.ts --outDir build && node copy-plugin.js"
   },
   "eslintConfig": {
     "extends": [
