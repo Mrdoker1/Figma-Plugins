@@ -1,0 +1,46 @@
+/* ui.module.css */
+.table {
+    margin: 8px 0;
+    display: grid;
+    grid-template-columns: auto;
+    grid-row-gap: 12px;
+  }
+  
+  .tableRow {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .input {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .buttonGroup {
+    margin: 4px;
+  }
+  
+  .left, .right {
+    flex: 1;
+  }
+  
+  .sectionTitle {
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+  
+  .inputField {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 8px;
+    font-size: 14px;
+  }
+  
+  .divider {
+    height: 1px;
+    background-color: #ccc;
+    width: 100%;
+  }
+  
+  /* Дополнительные стили можно добавлять сюда */
+  

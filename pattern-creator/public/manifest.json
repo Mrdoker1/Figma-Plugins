@@ -1,0 +1,10 @@
+{
+  "name": "Pattern Creator",
+  "id": "1062828640232861563",
+  "api": "1.0.0",
+  "main": "static/js/main.6c4f514a.js",
+  "editorType": [
+    "figma"
+  ],
+  "ui": "index.html"
+}
